@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conversor.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Conversor de moneda</title>
+</head>
+<body>
+    <div class="capa"></div>
+    
+    <h1>Conversor de moneda</h1>
+    <p>Si tu vehículo no está en ARS, podés realizar la conversion acá.</p>
+    
+    <div class="container">
+        <div class="moneda">
+            <select id="primermoneda">
+                <option value="ARS">ARS</option>
+                <option value="BRL">BRL</option>
+                <option value="EUR">EUR</option>
+                <option value="USD" selected>USD</option>
+                <option value="UYU">UYU</option>
+
+            </select>
+
+            <input 
+            type="number" 
+            id="primercantidad" 
+            placeholder="0"  
+            value="1"
+            >
+
+        </div>
+
+        <div class="taza-cambio-container">
+           <!--  <i class="ri-arrow-up-down-line" id="taza"></i> -->
+            <button class="ri-arrow-up-down-line" id="btn">
+                
+            </button>
+
+            <div class="cambio" id="cambio"></div>
+
+        </div>
+
+        <div class="moneda">
+            <select id="segundamoneda">
+                <option value="ARS" selected>ARS</option>
+                <option value="BRL">BRL</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="UYU">UYU</option>
+
+            </select>
+
+            <input 
+            type="number" 
+            id="segundacantidad" 
+            placeholder="0"  
+            >
+
+        </div>
+    </div>
+
+<script src="conversor.js"></script>
+</body>
+</html>
